@@ -1,0 +1,17 @@
+
+
+cat vhost.conf
+cp vhost.conf /opt/bitnami/apache/conf/vhosts/
+cd /opt/bitnami/apache/conf/
+ls
+tail httpd.conf
+apachectl configtest
+sudo /opt/bitnami/ctlscript.sh restart apache
+apachectl -S
+
+
+
+sudo /opt/bitnami/bncert-tool
+
+ls /opt/bitnami/apache/conf/
+
